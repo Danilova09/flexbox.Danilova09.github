@@ -1,0 +1,184 @@
+body {
+    margin: 0;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item {
+    flex: 1;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+    padding: 20px;
+}
+
+.item1 {
+    background: #b2de27;
+}
+
+.item2 {
+    background: #cf2f74;
+}
+
+.item3 {
+    background: #eff5f7;
+}
+
+.item4 {
+    background: #284387;
+}
+
+.item5 {
+    background: #faf4d3;
+}
+
+.item6 {
+    background: #fbc093;
+}
+
+.item7 {
+    background: #fe7968;
+}
+
+.item8 {
+    background: #d0da8e;
+}
+
+.item9 {
+    background: #381fd1;
+}
+
+.item10 {
+    background: #fff000;
+}
+
+
+/* Flex order */
+/* По умолчанию у всех flex-элементов flex-order=0 */
+/* Чем выше flex-order у элемента, тем дальше он будет находится */
+
+.item6 {
+    order: 6;
+}
+
+/* Align self */
+
+.container-align-self {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    border: 5px solid red;
+}
+
+.item11 {
+    background: #fbc093;
+    align-self: flex-end;
+}
+
+.item12 {
+    background: #fe7968;
+    align-self: flex-start;
+}
+
+.item13 {
+    background: #d0da8e;
+    align-self: stretch;
+}
+
+.item14 {
+    background: #381fd1;
+}
+
+.item15 {
+    background: #fff000;
+}
+
+/* Flex */
+
+.container-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    border: 5px solid red;
+}
+
+.item-flex {
+    border: 1px solid red;
+    flex: 1;
+    /* Занимает одинаковое количество места не зависимо от контента */
+}
+
+.item16 {
+    background: #284387;
+}
+
+.item17 {
+    flex: 2;
+    /* Занимает в два раза больше места, не зависимо от контента */
+    background: #cf2f74;
+}
+
+.item18 {
+    background: #eff5f7;
+}
+
+.item19 {
+    background: #fbc093;
+}
+
+.item20 {
+    background: rgb(237, 50, 50);
+}
+
+/* Flex basis */
+.container-basis {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    border: 5px solid red;
+}
+
+.item-flex-basis {
+    flex-basis: 200px;
+}
+
+.item21 {
+    background: rgb(215, 90, 90);
+}
+
+.item22 {
+    background: rgb(138, 199, 41);
+}
+
+.item23 {
+    background: rgb(81, 94, 231);
+}
+
+.item24 {
+    background: rgb(203, 65, 183);
+}
+
+.item25 {
+    background: rgb(58, 198, 186);
+}
+
+/* 
+
+flex grow - позволяет (1) либо запрещает (0) растягиваться flex-элементам внутри контейнерам
+flex shrink - разрещает (1) либо запрещает (0) сужение flex-элементов
+flex basis - определяет начальный размере элемента 
+
+flex: grow shrink basis;
+
+*/
